@@ -7,12 +7,12 @@
   <title>Wines</title>
 </head>
 <body>
-<form action="10.query_results.php" method="GET">
+<form action="07.query_results.php" method="GET">
 <?php
   require "db_secure.php";
 
   // selectDistinct() function shown in Example 6-9 goes here
-  require "10.select_list.php";
+  require "07.select_list.php";
 
   // Connect to the server
   if (!($connection = @ mysql_connect(DB_HOST, DB_USER, DB_PW))) {
