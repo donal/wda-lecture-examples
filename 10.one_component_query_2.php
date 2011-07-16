@@ -1,6 +1,4 @@
 <?php
-   require 'db_secure.php';
-
    // Database activity occurs here -- process $_GET["input"]
 
    // This is the key to one-component querying:
