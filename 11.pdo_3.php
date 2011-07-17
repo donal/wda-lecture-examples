@@ -1,8 +1,8 @@
 <?php
-require_once('pdo.inc.php');
+require_once('db_pdo.php');
 
 try {
-  $pdo = new PDO($dsn, $username, $password);
+  $pdo = new PDO($dsn, DB_USER, DB_PW);
   
   // all errors will throw exceptions
   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -20,7 +20,5 @@ try {
   echo $e->getMessage();
   exit;
 }
-
-
 
 ?>
