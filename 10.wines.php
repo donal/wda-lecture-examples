@@ -10,11 +10,11 @@
   function getWines($regionName) {
     // Connect to the server
     if (!($connection = @ mysql_connect(DB_HOST, DB_USER, DB_PW))) {
-     showerror();
+      showerror();
     }
 
     if (!mysql_select_db(DB_NAME, $connection)) {
-     showerror();
+      showerror();
     }
 
     // manually clean data
